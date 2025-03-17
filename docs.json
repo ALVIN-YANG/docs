@@ -53,6 +53,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "自定义tab",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "custom-dir/afirca"
+            ]
+          },
+        ]
       }
     ],
     "global": {
