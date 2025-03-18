@@ -1,102 +1,178 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "HooRii Documents",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "zh-Hans",
+        "tabs": [
           {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+            "tab": "亚洲",
+            "groups": [
+              {
+                "group": "中国",
+                "pages": [
+                  {
+                    "group": "北京",
+                    "icon": "pen-paintbrush",
+                    "pages": [
+                      "/src/zh/1-Asia/1-China/1-Beijing/1-The Forbidden City",
+                      "/src/zh/1-Asia/1-China/1-Beijing/2-The Great Wall"
+                    ]
+                  },
+                  {
+                    "group": "上海",
+                    "icon": "pen-paintbrush",
+                    "pages": ["/src/zh/1-Asia/1-China/2-Shanghai/1-Yu Yuan"]
+                  }
+                ]
+              },
+              {
+                "group": "日本",
+                "pages": [
+                  {
+                    "group": "东京",
+                    "icon": "pen-paintbrush",
+                    "pages": [
+                      "/src/zh/1-Asia/2-Japan/1-Tokyo/1-Senso-ji",
+                      "/src/zh/1-Asia/2-Japan/1-Tokyo/2-Tokyo Imperial Palace"
+                    ]
+                  },
+                  {
+                    "group": "横滨",
+                    "icon": "pen-paintbrush",
+                    "pages": [
+                      "/src/zh/1-Asia/2-Japan/2-Yokohama/1-Yokohama Chinatown",
+                      "/src/zh/1-Asia/2-Japan/2-Yokohama/2-Yamashita Park"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "印度",
+                "pages": ["/src/zh/1-Asia/3-India/1-intro"]
+              }
             ]
           },
           {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+            "tab": "欧洲",
+            "groups": [
+              {
+                "group": "法国",
+                "pages": [
+                  {
+                    "group": "巴黎",
+                    "pages": [
+                      "/src/zh/2-Eroup/1-France/1-Paris/1-TheLouvre",
+                      "/src/zh/2-Eroup/1-France/1-Paris/2-EiffelTower"
+                    ]
+                  },
+                  {
+                    "group": "马赛",
+                    "pages": ["/src/zh/2-Eroup/1-France/2-Marseille/1-Intro"]
+                  }
+                ]
+              },
+              {
+                "group": "英格兰",
+                "pages": ["/src/zh/2-Eroup/2-England/1-Intro"]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
+            "tab": "Asia",
+            "groups": [
+              {
+                "group": "China",
+                "pages": [
+                  {
+                    "group": "Beijing",
+                    "icon": "pen-paintbrush",
+                    "pages": [
+                      "/src/en/1-Asia/1-China/1-Beijing/1-The Forbidden City",
+                      "/src/en/1-Asia/1-China/1-Beijing/2-The Great Wall"
+                    ]
+                  },
+                  {
+                    "group": "Shanghai",
+                    "icon": "pen-paintbrush",
+                    "pages": ["/src/en/1-Asia/1-China/2-Shanghai/1-Yu Yuan"]
+                  }
+                ]
+              },
+              {
+                "group": "Japan",
+                "pages": [
+                  {
+                    "group": "Tokyo",
+                    "icon": "pen-paintbrush",
+                    "pages": [
+                      "/src/en/1-Asia/2-Japan/1-Tokyo/1-Senso-ji",
+                      "/src/en/1-Asia/2-Japan/1-Tokyo/2-Tokyo Imperial Palace"
+                    ]
+                  },
+                  {
+                    "group": "Yokohama",
+                    "icon": "pen-paintbrush",
+                    "pages": [
+                      "/src/en/1-Asia/2-Japan/2-Yokohama/1-Yokohama Chinatown",
+                      "/src/en/1-Asia/2-Japan/2-Yokohama/2-Yamashita Park"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "India",
+                "pages": ["/src/en/1-Asia/3-India/1-intro"]
+              }
             ]
           },
           {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+            "tab": "Eroup",
+            "groups": [
+              {
+                "group": "France",
+                "pages": [
+                  {
+                    "group": "Paris",
+                    "pages": [
+                      "/src/en/2-Eroup/1-France/1-Paris/1-TheLouvre",
+                      "/src/en/2-Eroup/1-France/1-Paris/2-EiffelTower"
+                    ]
+                  },
+                  {
+                    "group": "Marseille",
+                    "pages": ["/src/en/2-Eroup/1-France/2-Marseille/1-Intro"]
+                  }
+                ]
+              },
+              {
+                "group": "England",
+                "pages": ["/src/en/2-Eroup/2-England/1-Intro"]
+              }
             ]
           }
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "global": {}
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
+  "navbar": {},
+  "footer": {}
 }
