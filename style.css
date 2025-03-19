@@ -1,0 +1,7 @@
+button .relative.w-4.h-4.rounded-full {
+    display: none;
+  }
+
+  [role="menuitem"] .relative.w-4.h-4.rounded-full {
+    display: none;
+  }

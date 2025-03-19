@@ -1,5 +1,5 @@
 // 定义环境变量
-const env = "local"; // 或者 'test'，'prod'
+const env = "test"; // 'local' 'test'，'prod'
 
 // 根据环境定义配置
 const envConfig = {
@@ -8,12 +8,12 @@ const envConfig = {
     validateTokenUrl: "http://localhost:8080/api/user/validateToken",
   },
   test: {
-    loginUrl: "http://test.login.com/Console/login",
-    validateTokenUrl: "http://test.api.com/api/validateToken",
+    loginUrl: "http://test-console.hoorii.io/user/login",
+    validateTokenUrl: "http://192.168.10.126:8080/api/user/validateToken",
   },
   prod: {
-    loginUrl: "http://prod.login.com/Console/login",
-    validateTokenUrl: "http://prod.api.com/api/validateToken",
+    loginUrl: "https://console.hoorii.io/user/login",
+    validateTokenUrl: "https://api.console.hoorii.io/api/user/validateToken",
   },
 };
 
@@ -107,8 +107,8 @@ async function main() {
     isTokenValidated = true;
     removeUrlToken();
   } else {
-    redirectToLogin(); // 验证失败，重定向到登录页面
+    // redirectToLogin(); // 验证失败，重定向到登录页面
   }
 }
 
-// main();
+main();
